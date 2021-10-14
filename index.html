@@ -10,8 +10,8 @@
       <tr><th class="title">Gaeta Field</th><th></th></tr>
       <tr><td><table> <!-- Scores -->
         <tr><th></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>R</th></tr>
-        <tr><th>AWAY</th><td class="score" name="Away1">0</td><td class="score" name="Away2">0</td><td class="score" name="Away3">0</td><td class="score" name="Away4">0</td><td class="score" name="Away5">0</td><td class="score" name="Away6">0</td><td class="score" name="Away7">0</td><td class="runs" name="AwayR">0</td></tr>
-        <tr><th>HOME</th><td class="score" name="Home1">0</td><td class="score" name="Home2">0</td><td class="score" name="Home3">0</td><td class="score" name="Home4">0</td><td class="score" name="Home5">0</td><td class="score" name="Home6">0</td><td class="score" name="Home7">0</td><td class="runs" name="HomeR">0</td></tr>
+        <tr><th>AWAY</th><td class="score" id="Away1">0</td><td class="score" id="Away2">0</td><td class="score" id="Away3">0</td><td class="score" id="Away4">0</td><td class="score" id="Away5">0</td><td class="score" id="Away6">0</td><td class="score" id="Away7">0</td><td class="runs" id="AwayR">0</td></tr>
+        <tr><th>HOME</th><td class="score" id="Home1">0</td><td class="score" id="Home2">0</td><td class="score" id="Home3">0</td><td class="score" id="Home4">0</td><td class="score" id="Home5">0</td><td class="score" id="Home6">0</td><td class="score" id="Home7">0</td><td class="runs" id="HomeR">0</td></tr>
       </table></td><td><img src="images/ups.png" height="120px"></td></tr>
     </table>
     <br>
@@ -19,11 +19,11 @@
     <table class="controls">
       <tr><th class="title">Control Center</th></tr>
       <tr><td><table class="innerControls">
-        <tr><td>Who:</td><td><select name="Who"><option value="Home">Home</option><option value="Away">Away</option></select></td>
-          <td>Inning: <select name="Inning"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
+        <tr><td>Who:</td><td><select id="Who"><option value="Away">Away</option><option value="Home">Home</option></select></td>
+          <td>Inning: <select id="Inning"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
             <option value="5">5</option><option value="6">6</option><option value="7">7</option></select></td></tr>
-        <tr><td>Runs:</td><td><button class="fancyButton" name='Runs+'>+</button> <button class="fancyButton" name='Runs-'>-</button></td></tr>
-        <tr><td>Sound:</td><td><button name='Sound'>🎵</button> <button name='Song'>🎹</button></td></tr>
+        <tr><td>Runs:</td><td><button class="fancyButton" id='Runs+'>+</button> <button class="fancyButton" id='Runs-'>-</button></td></tr>
+        <tr><td>Sound:</td><td><button id='Sound'>🎵</button> <button id='Song'>🎹</button></td></tr>
       </table></td></tr>
     </table>
     <script src="app.js"></script>
