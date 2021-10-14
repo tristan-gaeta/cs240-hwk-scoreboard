@@ -7,21 +7,23 @@
   <body>
     <!-- Score Board -->
     <table>
-      <tr><th>Gaeta Field</th><th></th></tr>
+      <tr><th class="title">Gaeta Field</th><th></th></tr>
       <tr><td><table> <!-- Scores -->
         <tr><th></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>R</th></tr>
-        <tr><th>AWAY</th><td name="Away1">0</td><td name="Away2">0</td><td name="Away3">0</td><td name="Away4">0</td><td name="Away5">0</td><td name="Away6">0</td><td name="Away7">0</td><td name="AwayR">0</td></tr>
-        <tr><th>HOME</th><td name="Home1">0</td><td name="Home2">0</td><td name="Home3">0</td><td name="Home4">0</td><td name="Home5">0</td><td name="Home6">0</td><td name="Home7">0</td><td name="HomeR">0</td></tr>
+        <tr><th>AWAY</th><td class="score" name="Away1">0</td><td class="score" name="Away2">0</td><td class="score" name="Away3">0</td><td class="score" name="Away4">0</td><td class="score" name="Away5">0</td><td class="score" name="Away6">0</td><td class="score" name="Away7">0</td><td class="runs" name="AwayR">0</td></tr>
+        <tr><th>HOME</th><td class="score" name="Home1">0</td><td class="score" name="Home2">0</td><td class="score" name="Home3">0</td><td class="score" name="Home4">0</td><td class="score" name="Home5">0</td><td class="score" name="Home6">0</td><td class="score" name="Home7">0</td><td class="runs" name="HomeR">0</td></tr>
       </table></td><td><img src="images/ups.png" height="120px"></td></tr>
     </table>
     <br>
     <!-- Control Center-->
-    <table>
-      <tr><th>Control Center</th></tr>
-      <tr><td><table>
-        <tr><td>Who:</td><td><button>Choose</button></td><td>Inning: <button>Choose</button></td></tr>
-        <tr><td>Runs:</td><td><button>+</button> <button>–</button></td></tr>
-        <tr><td>Sound:</td><td><button>🎵</button> <button>🎹</button></td></tr>
+    <table class="controls">
+      <tr><th class="title">Control Center</th></tr>
+      <tr><td><table class="innerControls">
+        <tr><td>Who:</td><td><select name="Who"><option value="Home">Home</option><option value="Away">Away</option></select></td>
+          <td>Inning: <select name="Inning"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
+            <option value="5">5</option><option value="6">6</option><option value="7">7</option></select></td></tr>
+        <tr><td>Runs:</td><td><button class="fancyButton" name='Runs+'>+</button> <button class="fancyButton" name='Runs-'>-</button></td></tr>
+        <tr><td>Sound:</td><td><button name='Sound'>🎵</button> <button name='Song'>🎹</button></td></tr>
       </table></td></tr>
     </table>
     <script src="app.js"></script>

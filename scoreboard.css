@@ -1,1 +1,43 @@
 /* Your CSS definitions here */
+* {
+  font-family: Arial;
+  font-size: 12pt;
+}
+
+table {
+  background-color: rgb(50, 100, 85);
+  color: whitesmoke;
+}
+
+th.title {
+  font-size: 28pt;
+}
+
+td.score {
+  font-size: 12pt;
+  border: solid black;
+  text-align: center;
+  width: 20px;
+}
+
+td.runs {
+  font-size: 12pt;
+  border: solid whitesmoke;
+  text-align: center;
+  width: 20px;
+}
+
+.controls{
+    background-color: black;
+    padding: 20px;
+    border-style: outset;
+    border-radius: 10px;
+}
+
+.innerControls {
+    background-color: black;
+}
+
+button.fancyButton{
+    font-family: Courier;
+}
